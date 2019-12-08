@@ -1,0 +1,12 @@
+<form [formGroup]="searchForm">
+  <label for="search">Search for:</label>
+  <input type="text" id="search" formControlName="query">
+
+  <div class="engines">
+    <input type="radio" id="google" formControlName="engine" value="google">
+    <label for="google">Google</label>
+
+    <input type="radio" id="bing" formControlName="engine" value="bing">
+    <label for="bing">Bing</label>
+  </div>
+</form>

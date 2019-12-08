@@ -1,0 +1,9 @@
+<p>
+  <ng-container *ngIf="engine$ | async as engine; else noEngine">This is {{ engine }} component.</ng-container>
+
+  <ng-template #noEngine>This is Results component with no search engine selected.</ng-template>
+
+  You typed <mark *ngIf="query$ | async as query; else noQuery">{{ query }}</mark>.
+
+  <ng-template #noQuery>nothing</ng-template>
+</p>

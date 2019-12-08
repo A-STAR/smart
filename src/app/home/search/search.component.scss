@@ -1,0 +1,30 @@
+:host {
+  display: flex;
+  justify-content: center;
+}
+
+input#search {
+  width: 400px;
+  height: 34px !important;
+  margin-left: 10px;
+  margin-bottom: 30px;
+  padding-left: 15px;
+  padding-right: 15px;
+  font-size: 16px;
+  line-height: 34px;
+}
+
+div.engines {
+
+  input {
+    margin-left: 20px;
+
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+
+  label {
+    padding-left: 10px;
+  }
+}
